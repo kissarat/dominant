@@ -1,0 +1,67 @@
+.zen {
+    position: fixed;
+    top: 2cm;
+    right: 1cm;
+    width: 8cm;
+    padding: 2mm;
+    border: 3px double black;
+    background-color: #ffff99;
+    z-index: 10000;
+    text-align: justify;
+}
+
+.zen > div, .zen-panel {
+    margin-bottom: 1mm;
+}
+
+.zen-panel {
+    height: 5mm;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: move;
+    user-select: none;
+    text-align: right;
+}
+
+.zen-panel > span {
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 1mm;
+    color: #ffff99;
+    cursor: pointer;
+}
+
+.zen-panel > .offline {
+    opacity: 0.3;
+}
+
+.zen-panel > div {
+    float: left;
+    color: #ffff99;
+}
+
+.zen > textarea {
+    width: 100%;
+}
+
+.zen-select {
+    user-select: none;
+    cursor: pointer;
+    -webkit-animation: zen-select 480ms ease-in-out 240ms infinite alternate;
+}
+
+.zen-commented {
+    border: 1mm solid red !important;
+}
+
+.zen-count {
+    display: inline;
+    color: #bb0000;
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 2px;
+}
+
+@-webkit-keyframes zen-select {
+    from { -webkit-filter: grayscale(0); opacity: 1; }
+    to   { -webkit-filter: grayscale(1); opacity: 0.3; }
+}

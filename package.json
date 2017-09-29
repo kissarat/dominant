@@ -1,0 +1,21 @@
+{
+	"name": "dominant",
+	"version": "1.0.0",
+	"description": "Dominant",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"author": "Taras Labiak <kissarat@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"intel": "^1.0",
+		"pg": "^4.3.0",
+		"ws": "^0.7.1"
+	},
+	"repository": {
+		"type": "mercurial",
+		"url": "ssh://hg@bitbucket.org/kissarat/dominant"
+	}
+}

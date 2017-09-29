@@ -1,0 +1,6 @@
+.hg*
+.idea/
+node_modules/
+__pycache__/
+*.pyc
+

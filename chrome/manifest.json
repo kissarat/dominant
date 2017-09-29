@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Dominant",
+	"author": "Taras Labiak",
+	"description": "Comment anywhere",
+	"version": "0.1",
+	"icons": {
+		"128": "/img/logo.png"
+	},
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["js/dominant.js"],
+		"css": ["dominant.css"],
+		"run_at": "document_start"
+	}],
+	"permissions": [ "tabs", "webRequest", "http://*/*", "https://*/*" ],
+	"web_accessible_resources": ["js/inject.js"],
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	}
+}
